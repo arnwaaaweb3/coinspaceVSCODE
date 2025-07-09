@@ -1,0 +1,25 @@
+coinspace/
+├── public/                       # Static files (icons, images)
+├── src/
+│   ├── app/                      # Semua yang berhubungan dengan routes, page-level components
+│   │   ├── dashboard/            # Dashboard page and related components
+│   │   │   └── index.tsx         # Dashboard main page (login + summary)
+│   │   ├── mint/                 # Minting page to upload and mint NFTs
+│   │   │   └── index.tsx         # Mint NFT form (upload + mint)
+│   │   ├── page.tsx              # Main landing page / homepage
+│   │   ├── layout.tsx            # Layout for root structure
+│   │   └── globals.css           # Global CSS
+│   ├── components/               # Reusable UI components
+│   │   ├── ConnectButton.tsx     # Wallet connect button component
+│   │   ├── WalletProvider.tsx    # Wallet provider for SuiKit integration
+│   │   ├── NFTCard.tsx           # Component to display NFT details
+│   │   ├── Header.tsx            # Header for consistent layout
+│   │   └── Footer.tsx            # Footer for app-wide content
+│   ├── lib/                      # Utility functions, hooks, and helpers
+│   │   └── mintNFT.ts            # Function to handle NFT minting
+│   ├── styles/                   # Custom styling, if any
+│   └── types/                    # TypeScript types (if needed)
+│       └── nft.d.ts              # Types for NFT metadata
+├── package.json                  # Dependencies and scripts
+├── tailwind.config.js            # Tailwind CSS config file
+└── tsconfig.json                 # TypeScript config file

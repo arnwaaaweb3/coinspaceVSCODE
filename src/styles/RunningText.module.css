@@ -1,0 +1,86 @@
+.runningTextContainer {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  z-index: 12;
+  height: 45px;
+  background-color: #604cc3;
+  background-image: url('/runningtext-block.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+/* === Text Jalan === */
+.runningText {
+  display: inline-block;
+  white-space: nowrap;
+  color: #fef4ea;
+  font-family: Helvetica, sans-serif;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  font-weight: 500;
+  padding-left: 100%;
+  z-index: 30;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.runningText:hover {
+  animation-play-state: paused;
+}
+
+/* === Link Terms === */
+.termsLink {
+  color: #fef4ea;
+  text-decoration: underline;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.termsLink:hover {
+  color: #e6e0fa;
+}
+
+/* === Tombol Close === */
+.closeButton {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  z-index: 1001;
+  background: transparent;
+  border: none;
+  color: #fef4ea;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.closeButton:hover {
+  color: #e6e0fa;
+}
+
+/* === Responsive tweak === */
+@media (max-width: 500px) {
+  .runningText {
+    font-size: 0.8rem;
+  }
+
+  .closeButton {
+    font-size: 1rem;
+    top: 6px;
+    right: 10px;
+  }
+}

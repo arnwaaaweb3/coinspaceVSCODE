@@ -1,0 +1,111 @@
+.panelWrapper {
+  width: 100%;
+  padding: 2.5rem 1rem;
+  position: relative;
+  overflow: hidden;
+  top: 15px;
+  background-color: #fef4ea;
+}
+
+.panelContainer {
+  position: relative;
+  width: 100%;
+  background-color: #fef4ea;
+  max-width: 2000px;
+}
+
+.panelImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  align-items: center;
+  margin-top: 25px;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+/* TAMBAHAN UNTUK WALLET BUTTON */
+.walletButtonContainer {
+  position: absolute;
+  bottom: 10vh;
+  left: 7vw;
+  scale: 1.4;
+  z-index: 30;
+  transform-origin: bottom left;
+}
+
+/* Style override untuk WalletButton */
+.walletButtonContainer :global(.connect-button) {
+  background: linear-gradient(135deg, #604cc3, #ff7f3e);
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+.walletButtonContainer :global(.connected-wallet) {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #604cc3;
+  border-radius: 12px;
+}
+
+.walletButtonContainer :global(.wallet-dropdown) {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #ff7f3e;
+  backdrop-filter: blur(5px);
+}
+
+/* Tambahkan ini ke file CSS-mu */
+.wallet-icon {
+  width: 24px;
+  height: 24px;
+  color: #604cc3; /* Warna primary kamu */
+}
+
+.walletButtonContainer :global(.wallet-option) svg {
+  margin-right: 10px;
+}
+
+/* Style untuk icon di tombol connected */
+.walletButtonContainer :global(.connected-wallet) svg {
+  color: #ff7f3e; /* Warna secondary kamu */
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background: #604cc3; /* Warna primary kamu */
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff7f3e; /* Warna secondary kamu */
+}
+
+.walletNotice {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #fef4ea;
+  max-width: 200px;
+  font-family: Helvetica, sans-serif;
+}
+
+.termsLink {
+  color: #ff7f3e;
+  text-decoration: underline;
+  font-weight: 700;
+  font-family: Helvetica, sans-serif;
+}
+
+.termsLink:hover {
+  color: #d66830;
+  font-family: Helvetica, sans-serif;
+}

@@ -1,0 +1,244 @@
+/* Container */
+.connect-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background-color: #fef4ea; /* Background tema */
+  border-radius: 12px;
+}
+
+/* Wrapper */
+.connect-button-wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Connect Button */
+.custom-connect-button {
+  background-color: #604cc3; /* Primary */
+  color: #fef4ea;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 160px;
+  box-shadow: 
+    inset 1px 1px 1px #fef4ea,
+    inset -1px -1px 1px #604cc3,
+    0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.custom-connect-button:hover {
+  background-color: #ff7f3e; /* Secondary */
+  transform: translateY(-1px);
+}
+
+.custom-connect-button:active {
+  transform: translateY(0);
+  background-color: #d66830;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-connect-button.connected {
+  background-color: #d3d3d3;
+  color: #666;
+  box-shadow: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #011829;
+  cursor: default;
+  font-family: Helvetica, sans-serif;
+  align-items: center;
+}
+
+.connected-wallet-display {
+  display: flex;
+  align-items: center;
+}
+
+/* Disconnect Button */
+.custom-disconnect-button {
+  background-color: #ff7f3e; /* Secondary */
+  color: #fef4ea;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 160px;
+  box-shadow: 
+    inset 1px 1px 1px #fef4ea,
+    inset -1px -1px 1px #604cc3,
+    0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.custom-disconnect-button:hover {
+  background-color: #604cc3; /* Primary */
+  transform: translateY(-1px);
+}
+
+.custom-disconnect-button:active {
+  transform: translateY(0);
+  background-color: #3c3077;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Wallet Modal */
+.wallet-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.wallet-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 8px;
+  text-align: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.wallet-icon:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 4px #604cc3aa);
+}
+
+.wallet-modal {
+  background-color: #fef4ea;
+  border-radius: 12px;
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.wallet-modal-title {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #604cc3;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.wallet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.wallet-option {
+  background-color: #604cc3;
+  color: #fef4ea;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 
+    inset 1px 1px 1px #fef4ea,
+    inset -1px -1px 1px #604cc3,
+    0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.wallet-option:hover {
+  background-color: #ff7f3e;
+}
+
+.wallet-option:active {
+  background-color: #d66830;
+}
+
+.wallet-modal-text {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+}
+
+.wallet-modal-close {
+  background-color: #d3d3d3;
+  color: #666;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 
+    inset 1px 1px 1px #fef4ea,
+    inset -1px -1px 1px #604cc3,
+    0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.wallet-modal-close:hover {
+  background-color: #ff7f3e;
+  color: #fef4ea;
+}
+
+.wallet-modal-close:active {
+  background-color: #d66830;
+}
+
+.embed-button {
+  background-color: #fef4ea;
+  color: #604cc3;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 160px;
+  box-shadow:
+    inset 2px 2px 4px #e6dccf,
+    inset -2px -2px 4px #ffffff,
+    0 4px 8px rgba(96, 76, 195, 0.2); /* soft ungu glow */
+  transition: all 0.3s ease;
+}
+
+.embed-button:hover {
+  box-shadow:
+    inset 2px 2px 4px #d6c7b8,
+    inset -2px -2px 4px #ffffff,
+    0 6px 12px rgba(255, 127, 62, 0.25); /* soft oren glow on hover */
+  color: #ff7f3e;
+}
+
+.embed-button:active {
+  transform: scale(0.98);
+  box-shadow:
+    inset 1px 1px 2px #d6c7b8,
+    inset -1px -1px 2px #ffffff,
+    0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* UNIVERSAL RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* ANIMATIONS */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* MAIN CONTENT LAYOUT */
+.main-content {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  color: #fef4ea;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* TITLES & TEXT */
+.main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fef4ea;
+  margin-bottom: 1rem;
+}
+
+.main-subtitle {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* WALLET BUTTON STYLING */
+.wallet-button-wrapper button {
+  background-color: #0891b2 !important;
+  color: #fef4ea !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 0.5rem !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  opacity: 1 !important;
+  transition: background-color 0.3s ease-in-out !important;
+}
+
+.wallet-button-wrapper button:hover {
+  background-color: #05586d !important;
+}
+
+/* ERROR TEXT */
+.error-message {
+  color: #ef4444;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* GLOBAL ELEMENT STYLE */
+:global {
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    font-family: 'Helvetica', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* RESPONSIVE TWEAKS */
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .main-subtitle {
+    font-size: 1rem;
+  }
+
+  .wallet-button-wrapper button {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
+  }
+}
